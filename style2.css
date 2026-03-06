@@ -1,0 +1,358 @@
+
+.main_nav,.nav_bar{
+    display: flex;
+    position: sticky;
+    top:0px;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    background-color: #f8f8f8;
+    list-style-type: none;
+    gap: 20px;
+} 
+.main_nav span{
+    font-size: 24px;
+    font-weight: bold;
+    color:purple;
+}
+.nav_bar{   
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+.nav_bar li a{
+    text-decoration: none;
+    color:purple;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.nav_bar li a:hover{
+    color: #007BFF;
+}
+.welcome_main {
+    background-color:whitesmoke;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    height:60vh;
+    text-align: center;
+    background-color:aqua;
+}
+.welcome_btn{
+    max-width: 50%;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.welcome_btn:hover{
+    background-color: #007BFF;
+}
+.about_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: x-large;
+    padding: 30px;
+}
+
+.hero_service {
+    display: flex;
+    background-color:gray;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+}
+
+/* generic section heading used across the page */
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 32px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 28px;
+        padding: 10px;
+    }
+}
+.service1 {
+    background-color:whitesmoke;
+    padding: 20px;
+    margin: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 25%;
+}
+.service2 {
+    background-color:whitesmoke;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 25%;
+}
+.service3 {
+    background-color:whitesmoke;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width:25%; 
+}
+.response{
+    background-color:lightblue;
+    display: flex;
+    flex-direction: row;
+     align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+}
+.response1 {
+  background-color:whitesmoke;
+    padding: 20px;
+    margin: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 25%; 
+}
+.response2 {
+   background-color:whitesmoke;
+    padding: 20px;
+    margin: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 25%;
+}
+.response3 {
+   background-color:whitesmoke;
+    padding: 20px;
+    margin: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 25%;
+}
+form{
+    background-color:whitesmoke;
+    max-width: 400px;
+    width: 100%;
+    border:5px;
+    padding: 20px;
+    border-radius:0px;
+    margin: 0 auto;
+}
+.form {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    padding: 40px;
+}
+.form2{
+    /* avoid overlapping form by removing negative margin */
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+    font-size: 30%;
+}
+
+@media (max-width: 768px) {
+    .form2 {
+        margin-top: 20px;
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+textarea{
+    height: 150px;
+}
+input[type="text"], input[type="email"], textarea {
+    width:100%;
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    width: 100%;
+    background-color:skyblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #007BFF;
+}
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 60px 20px;
+    gap: 50px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.581);
+    flex-wrap: wrap;
+}
+
+footer > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 10px;
+        gap: 20px;
+    }
+    footer > div {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 30px 5px;
+    }
+    footer h2 {
+        font-size: 18px;
+    }
+    footer span {
+        font-size: 12px;
+    }
+}
+
+
+/* ===== responsive adjustments ===== */
+@media (max-width: 768px) {
+    .main_nav, .nav_bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .welcome_main {
+        padding: 20px;
+        font-size: large;
+        height: auto;
+    }
+
+    .about_main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        font-size: large;
+    }
+
+    .hero_service, .response {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .service1, .service2, .service3,
+    .response1, .response2, .response3 {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 18px;
+    }
+
+    .form {
+        flex-direction: column;
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto 20px;
+        padding: 15px;
+    }
+
+    .form2 {
+        margin-top: 0;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav_bar li a {
+        font-size: 16px;
+    }
+
+    .welcome_btn {
+        max-width: 70%;
+        font-size: 16px;
+    }
+
+    .about_main, .hero_service, .response {
+        font-size: medium;
+    }
+
+    .form, .form2 {
+        font-size: 20px;
+    }
+}
